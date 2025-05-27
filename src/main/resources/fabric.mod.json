@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "betterthansprint",
+  "version": "${version}",
+
+  "name": "Better Than Sprint",
+  "description": "sprint mod, i guess",
+  "authors": [
+    "ItzMarni"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+		"main": [
+			"me.marni.betterthansprint.BetterThanSprint"
+		],
+		"beforeGameStart": [
+			"me.marni.betterthansprint.BetterThanSprint"
+		],
+		"afterGameStart": [
+			"me.marni.betterthansprint.BetterThanSprint"
+		]
+	},
+  "mixins": [
+		"betterthansprint.mixins.json"
+  ],
+
+  "depends": {
+		"minecraft": "*",
+		"fabricloader": ">=0.15.5"
+  },
+  "suggests": {
+  }
+}
